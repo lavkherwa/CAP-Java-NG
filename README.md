@@ -1,5 +1,5 @@
 # CAP-Java-NG-stake
-[CAP Home Page](#cap-home-page) | [Getting Started - First Application](#getting-started---first-application) | [Additional Resources](#additional-resources) | [Local HANA Setup](#local-hana-setup) |
+[CAP Home Page](#cap-home-page) | [Getting Started - First Application](#getting-started---first-application) | [Additional Resources](#additional-resources) | [Local HANA Setup](#local-hana-setup) | [Run Application Locally](#run-application-locally)
 
 
 ## CAP Home Page
@@ -19,3 +19,9 @@ Local command to deploy cds to HANA hdi container (create and config locally)
   - http://www.easymarketplace.de/SAPCAR.php#:~:text=How%20to%20extract%20(decompressing)%20CAR%20and%20SAR%20Files%20%3F,in%20this%20archive%2C%20become%20decompressed.
 - After configuring above run below command on root
   - command: **cds deploy --to hana**
+  
+## Run Application Locally
+- Clone the application
+- Execute step **"Local HANA Setup"**
+- Run the java module as **"spring boot application"**
+- You application will start at port 8080 and you can access it at http://localhost:8080
