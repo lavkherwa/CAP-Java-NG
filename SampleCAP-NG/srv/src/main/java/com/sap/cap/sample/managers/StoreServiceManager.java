@@ -15,8 +15,11 @@ import cds.gen.bp.store.Store_;
 @Component
 public class StoreServiceManager {
 
-	@Autowired
 	private PersistenceService db;
+
+	public StoreServiceManager(PersistenceService db) {
+		this.db = db;
+	}
 
 	public Authors readAuthorByName(String name) {
 

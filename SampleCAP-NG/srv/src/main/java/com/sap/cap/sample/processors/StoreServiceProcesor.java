@@ -22,11 +22,13 @@ import cds.gen.storeservice.StoreService_;
 @ServiceName(StoreService_.CDS_NAME)
 public class StoreServiceProcesor implements EventHandler {
 
-	@Autowired
 	private StoreServiceManager storageServiceManager;
-
-	@Autowired
 	private ResponseHelper response;
+
+	public StoreServiceProcesor(StoreServiceManager storageServiceManager, ResponseHelper response) {
+		this.storageServiceManager = storageServiceManager;
+		this.response = response;
+	}
 
 	@Before(event = CdsService.EVENT_CREATE)
 	public void beforeCreate(Books book) {
@@ -56,7 +58,7 @@ public class StoreServiceProcesor implements EventHandler {
 				.filter(b -> b.getAuthor().getName().equalsIgnoreCase("lav"))//
 				.findAny();
 
-		if (result.get() != null) {
+		if (result.isPresent()) {
 			response.forbidden(MessageKeys.NO_ACCESS_TO_LAV_BOOKS);
 		}
 	}
