@@ -1,5 +1,5 @@
 # CAP-Java-NG-stake
-[CAP Home Page](#cap-home-page) | [Getting Started - First Application](#getting-started---first-application) | [Additional Resources](#additional-resources) | [Local HANA Setup](#local-hana-setup) |
+[CAP Home Page](#cap-home-page) | [Getting Started - First Application](#getting-started---first-application) | [Additional Resources](#additional-resources) | [Local HANA Setup](#local-hana-setup) | [Run Application Locally](run-application-locally)
 
 
 ## CAP Home Page
