@@ -1,7 +1,5 @@
 # CAP-Java-NG-stake
-[CAP Home Page](#cap-home-page) | [Getting Started - First Application](#getting-started---first-application) | [Additional Resources](#additional-resources) | [Local HANA Setup](#local-hana-setup) | [Run Application Locally](#run-application-locally)
-
-
+[CAP Home Page](#cap-home-page) | [Getting Started - First Application](#getting-started---first-application) | [Additional Resources](#additional-resources) | [Local HANA Setup](#local-hana-setup) | [Run Application Locally](#run-application-locally) | [Security Implementation In CAP](#security-implementation-in-cap)
 ## CAP Home Page
 CAP home page: https://github.wdf.sap.corp/pages/cap/about/
 
@@ -25,3 +23,6 @@ Local command to deploy cds to HANA hdi container (create and config locally)
 - Execute step **"Local HANA Setup"**
 - Run the java module as **"spring boot application"**
 - You application will start at port 8080 and you can access it at http://localhost:8080
+
+## Security Implementation In CAP
+Link: https://github.wdf.sap.corp/pages/cap/java/advanced#security
