@@ -1,0 +1,41 @@
+_schema-version: '3.1'
+ID: SampleCAP-NG
+version: 1.0.0
+description: "Sample application"
+
+modules:
+ - name: SampleCAP-NG-db
+   type: hdb
+   path: db
+   parameters:
+     buildpack: nodejs_buildpack
+     memory: 256M
+     disk-quota: 256M
+     stack: cflinuxfs3
+   requires:
+     - name: SampleCAP-NG-hdi-container
+     
+ - name: SampleCAP-NG-srv
+   type: java
+   path: srv
+   properties:
+     EXIT: 1  
+   build-parameters:
+      build-result: "target/*.jar"
+   requires:
+    - name: SampleCAP-NG-db
+   provides:
+    - name: srv-binding      
+      properties:
+        srv-url: ${default-url}
+
+
+resources:
+ - name: SampleCAP-NG-hdi-container
+   type: com.sap.xs.hdi-container
+   parameters:
+     service: hana 
+     service-plan: hdi-shared
+   properties:
+     hdi-service-name: ${service-name}
+
