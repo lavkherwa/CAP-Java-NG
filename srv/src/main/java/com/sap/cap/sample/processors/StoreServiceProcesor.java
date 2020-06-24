@@ -53,13 +53,17 @@ public class StoreServiceProcesor implements EventHandler {
 	@After(event = CdsService.EVENT_READ)
 	public void afterRead(Stream<Books> books) {
 
+		/* ONLY APPLICABLE IN $expand case for books.
+		 * How to identify the $expand case?
+		 
 		Optional<Books> result = books//
-				.filter(b -> b.getAuthor().getName().equalsIgnoreCase("lav"))//
+				.filter(b -> b.getAuthor().getName().equalsIgnoreCase("lav Kherwa"))//
 				.findAny();
 
 		if (result.isPresent()) {
 			response.forbidden(MessageKeys.NO_ACCESS_TO_LAV_BOOKS);
 		}
+		*/
 	}
 
 }
