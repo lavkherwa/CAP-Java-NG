@@ -1,0 +1,1 @@
+# CAP-Java-NG-stake
