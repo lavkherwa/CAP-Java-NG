@@ -18,4 +18,4 @@ Local command to deploy cds to HANA hdi container (create and config locally)
   - https://help.sap.com/viewer/e54136ab6a4a43e6a370265bf0a2d744/4.2.12/en-US/c049e28431ee4e8280cd6f5d1a8937d8.html
   - http://www.easymarketplace.de/SAPCAR.php#:~:text=How%20to%20extract%20(decompressing)%20CAR%20and%20SAR%20Files%20%3F,in%20this%20archive%2C%20become%20decompressed.
 - After configuring above run below command on root
-  - command: cds deploy --tool hana
+  - command: **cds deploy --tool hana**
