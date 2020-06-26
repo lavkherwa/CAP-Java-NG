@@ -13,6 +13,9 @@
     "@sap/hana-client": "^2.4.202"
   },
   "cds": {
+    "hana" :{
+      "syntax": "hdi"
+    },
     "build": {
       "target": "."
     },
